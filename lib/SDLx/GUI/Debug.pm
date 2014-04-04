@@ -10,11 +10,8 @@ use 5.016;
 use warnings;
 
 package SDLx::GUI::Debug;
-{
-  $SDLx::GUI::Debug::VERSION = '0.001';
-}
 # ABSTRACT: Centralized debug utility
-
+$SDLx::GUI::Debug::VERSION = '0.002';
 use DateTime;
 use Exporter::Lite;
 use Time::HiRes qw{ time };
@@ -36,13 +33,15 @@ __END__
 
 =pod
 
+=encoding UTF-8
+
 =head1 NAME
 
 SDLx::GUI::Debug - Centralized debug utility
 
 =head1 VERSION
 
-version 0.001
+version 0.002
 
 =head1 DESCRIPTION
 

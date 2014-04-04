@@ -10,14 +10,11 @@ use 5.016;
 use warnings;
 
 package SDLx::GUI::Types;
-{
-  $SDLx::GUI::Types::VERSION = '0.001';
-}
 # ABSTRACT: Types used in the distribution
-
+$SDLx::GUI::Types::VERSION = '0.002';
 use Moose::Util::TypeConstraints;
 
-enum 'PackSide' => qw{ top bottom left right };
+enum 'PackSide' => [qw{ top bottom left right }];
 
 1;
 
@@ -25,13 +22,15 @@ __END__
 
 =pod
 
+=encoding UTF-8
+
 =head1 NAME
 
 SDLx::GUI::Types - Types used in the distribution
 
 =head1 VERSION
 
-version 0.001
+version 0.002
 
 =head1 DESCRIPTION
 

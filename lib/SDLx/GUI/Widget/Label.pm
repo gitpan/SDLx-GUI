@@ -10,11 +10,8 @@ use 5.016;
 use warnings;
 
 package SDLx::GUI::Widget::Label;
-{
-  $SDLx::GUI::Widget::Label::VERSION = '0.001';
-}
 # ABSTRACT: Label widget to display some text/image
-
+$SDLx::GUI::Widget::Label::VERSION = '0.002';
 use Moose;
 use MooseX::Has::Sugar;
 use MooseX::SemiAffordanceAccessor;
@@ -85,13 +82,15 @@ __END__
 
 =pod
 
+=encoding UTF-8
+
 =head1 NAME
 
 SDLx::GUI::Widget::Label - Label widget to display some text/image
 
 =head1 VERSION
 
-version 0.001
+version 0.002
 
 =head1 DESCRIPTION
 

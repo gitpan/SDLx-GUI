@@ -10,11 +10,8 @@ use 5.016;
 use warnings;
 
 package SDLx::GUI::Pack;
-{
-  $SDLx::GUI::Pack::VERSION = '0.001';
-}
 # ABSTRACT: Objects to keep track of pack options
-
+$SDLx::GUI::Pack::VERSION = '0.002';
 use Moose;
 use MooseX::Has::Sugar;
 use MooseX::SemiAffordanceAccessor;
@@ -64,13 +61,15 @@ __END__
 
 =pod
 
+=encoding UTF-8
+
 =head1 NAME
 
 SDLx::GUI::Pack - Objects to keep track of pack options
 
 =head1 VERSION
 
-version 0.001
+version 0.002
 
 =head1 DESCRIPTION
 
